@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="ContentDescription"
-    tools:background="@android:color/holo_blue_dark">
+    android:background="@android:color/holo_blue_dark">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line_1"
@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/ivThirdImage"
-        android:translationXIn="0.4"
-        android:translationXOut="0.4"
+        app:translationXIn="0.4"
+        app:translationXOut="0.4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/s_2_3"
@@ -46,8 +46,8 @@
 
     <ImageView
         android:id="@+id/ivSecondImage"
-        android:translationXIn="0.12"
-        android:translationXOut="0.12"
+        app:translationXIn="0.12"
+        app:translationXOut="0.12"
         app:layout_constrainedWidth="true"
         app:layout_constrainedHeight="true"
         android:layout_width="wrap_content"
@@ -64,8 +64,8 @@
 
     <ImageView
         android:id="@+id/ivFirstImage"
-        android:translationXIn="0.16"
-        android:translationXOut="0.16"
+        app:translationXIn="0.16"
+        app:translationXOut="0.16"
         app:layout_constrainedWidth="true"
         app:layout_constrainedHeight="true"
         android:layout_width="wrap_content"
@@ -96,8 +96,8 @@
 
     <ImageView
         android:id="@+id/ivFourthImage"
-        android:translationXIn="0.2"
-        android:translationXOut="0.2"
+        app:translationXIn="0.2"
+        app:translationXOut="0.2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constrainedHeight="true"
@@ -125,8 +125,8 @@
 
     <ImageView
         android:id="@+id/ivSixthImage"
-        android:translationXIn="0.06"
-        android:translationXOut="0.06"
+        app:translationXIn="0.06"
+        app:translationXOut="0.06"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/s_2_6"
@@ -153,8 +153,8 @@
 
     <ImageView
         android:id="@+id/ivSeventhImage"
-        android:translationXIn="0.18"
-        android:translationXOut="0.18"
+        app:translationXIn="0.18"
+        app:translationXOut="0.18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -182,8 +182,8 @@
 
     <ImageView
         android:id="@+id/ivFifthImage"
-        android:translationXIn="0.28"
-        android:translationXOut="0.28"
+        app:translationXIn="0.28"
+        app:translationXOut="0.28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 

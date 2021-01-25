@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<com.fei.parallaxviewpager.parallax.ParallaxViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/view_pager"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"

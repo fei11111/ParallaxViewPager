@@ -1,4 +1,4 @@
-package com.fei.parallaxviewpager;
+package com.fei.parallaxviewpager.parallax;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
