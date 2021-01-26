@@ -234,6 +234,7 @@
         app:layout_constrainedWidth="true"
         app:layout_constrainedHeight="true"
         app:layout_constraintHeight_percent="0.15"
-
+        app:translationYIn="0.14"
+        app:translationYOut="0.14"
         app:layout_constraintWidth_percent="0.45" />
 </androidx.constraintlayout.widget.ConstraintLayout>
