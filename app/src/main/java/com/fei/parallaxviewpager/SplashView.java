@@ -9,6 +9,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AnticipateInterpolator;
@@ -75,7 +76,7 @@ public class SplashView extends View {
         mCenterY = getMeasuredHeight() / 2;
         mBigCircleRadius = getMeasuredWidth() / 4f;
         mSmallCircleRadius = mBigCircleRadius / 8f;
-        mDiagonal = Math.sqrt(mCenterX * mCenterY + mCenterY * mCenterY);
+        mDiagonal = Math.sqrt(mCenterX * mCenterX + mCenterY * mCenterY);
     }
 
     @Override
@@ -226,8 +227,20 @@ public class SplashView extends View {
             //3.扩散，画空心圆，改变画笔宽度
             float strokeWidth = (float) (mDiagonal - mExpandRadius);
             mPaint.setStrokeWidth(strokeWidth);
+            //半径需要加上画笔宽度一半
             float radius = mExpandRadius + strokeWidth / 2;
             canvas.drawCircle(mCenterX, mCenterY, radius, mPaint);
         }
+    }
+
+    /**
+     * 阻止其他View touch效果
+     *
+     * @param event
+     * @return
+     */
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return true;
     }
 }
